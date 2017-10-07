@@ -24,6 +24,11 @@ namespace codeWars_CSharp
             String S2 = "yestheyarehere";
             var S3 = StringUnion.UnionOf(S1, S2);
             Console.WriteLine(S3);
+
+
+            // OddCount Demo
+            Console.WriteLine( OddCount.Find(new [] {20,1,-1,2,-2,3,3,5,5,1,2,4,20,4,-1,-2,5}) );
+            Console.WriteLine( OddCount.FindWithLinq(new [] {20,1,-1,2,-2,3,3,5,5,1,2,4,20,4,-1,-2,5}) );
         }
     }
 }
