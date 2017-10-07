@@ -3,6 +3,7 @@ using System.Text.RegularExpressions;
 
 namespace codeWars_CSharp.Models
 {
+    // This method accepts a string and returns a string sans vowels
     public class RemoveVowels
     {
         public string OutputString { get; set; }

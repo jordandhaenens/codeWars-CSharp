@@ -5,6 +5,7 @@ namespace codeWars_CSharp.Models
 {
     public class OddManOut
     {
+        // This method accepts a int[] full of either evens or odds and one int that is different from the others. The method retuns the int that is different from its group.
         public static int Find(int[] integers)
         {
             // Make Odd and Even arrays

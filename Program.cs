@@ -7,16 +7,23 @@ namespace codeWars_CSharp
     {
         static void Main(string[] args)
         {
-            // This method accepts a string and returns a string sans vowels
-            string String = "The day is so very fine. A hike would be nice.";
+            // RemoveVowels Demo
+            String String = "The day is so very fine. A hike would be nice.";
             RemoveVowels VowelShredder = new RemoveVowels(String);
             Console.WriteLine(VowelShredder.OutputString);
 
 
-            // This method accepts a int[] full of either evens or odds and one int that is different from the others. The method retuns the int that is different from its group.
+            // OddManOut Demo
             int[] integers = {12, 14, 46, 24, 23};
             int number = OddManOut.Find(integers);
             Console.WriteLine(number);
+
+
+            // StringUnion Demo
+            String S1 = "aretheyhere";
+            String S2 = "yestheyarehere";
+            var S3 = StringUnion.UnionOf(S1, S2);
+            Console.WriteLine(S3);
         }
     }
 }
