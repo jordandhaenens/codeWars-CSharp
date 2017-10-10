@@ -29,6 +29,17 @@ namespace codeWars_CSharp
             // OddCount Demo
             Console.WriteLine( OddCount.Find(new [] {20,1,-1,2,-2,3,3,5,5,1,2,4,20,4,-1,-2,5}) );
             Console.WriteLine( OddCount.FindWithLinq(new [] {20,1,-1,2,-2,3,3,5,5,1,2,4,20,4,-1,-2,5}) );
+
+
+            // Divisors Demo
+            string array = "[ ";
+            int [] Numbers = Divide.Divisors(12);
+            for (int i = 0; i < Numbers.Length; i++)
+            {
+                array += Numbers[i] + " ";
+            }
+            array += "]";
+            Console.WriteLine(array);
         }
     }
 }
