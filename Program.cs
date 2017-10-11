@@ -40,6 +40,10 @@ namespace codeWars_CSharp
             }
             array += "]";
             Console.WriteLine(array);
+
+
+            // Supermarket Demo
+            Console.WriteLine(Supermarket.QueueTime(new int[] { 2, 2, 3, 3, 4, 4 }, 2));
         }
     }
 }
