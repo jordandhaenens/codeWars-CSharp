@@ -61,14 +61,8 @@ namespace codeWars_CSharp.Models
                         }
                     }
                 }
-                // Sum each register's queue and return the greatest.
-                for (int i = 0; i < RegistersList.Count; i++)
-                {
-                    TotalQTimes.Add(RegistersList[i].Queue.Sum());
-                }
-                TotalTime = TotalQTimes.Max();
-
-                return TotalTime;
+                // Sum each register's queue and return the greatest
+                return TotalTime = RegistersList.Max(r => r.Queue.Sum());
             }
 
         }
